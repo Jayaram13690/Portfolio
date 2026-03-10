@@ -1,6 +1,7 @@
 import moviesAppImg from "../assets/moviesapp.jpg";
-import medicinalPlantsImg from "../assets/medicinal-plants.jpg";
+import medicinalPlantsImg from "../assets/medicinal-plants-hero.jpg";
 import driveGuardImg from "../assets/drive-guard.jpg";
+import employeeManagementImg from "../assets/employee-management-system.jpg";
 
 export const personalInfo = {
   name: "Jayaram",
@@ -60,7 +61,7 @@ export const projects = [
     description:
       "A comprehensive full-stack application for managing employee records, leave requests, and attendance tracking. Built with React.js frontend and Spring Boot backend, featuring JWT-based authentication, role-based access control, and async email notifications.",
     tech: ["React.js", "Spring Boot", "Java 17", "JWT", "MySQL", "REST APIs"],
-    image: null,
+    image: employeeManagementImg,
     link: "https://github.com/Jayaram13690/Employee_Management_System",
     highlights: [
       "Implemented JWT-based authentication with secure refresh token mechanism (7-day tokens).",
