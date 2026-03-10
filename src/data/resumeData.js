@@ -55,6 +55,24 @@ export const internships = [
 
 export const projects = [
   {
+    title: "Employee Management System",
+    date: "Jan 2025",
+    description:
+      "A comprehensive full-stack application for managing employee records, leave requests, and attendance tracking. Built with React.js frontend and Spring Boot backend, featuring JWT-based authentication, role-based access control, and async email notifications.",
+    tech: ["React.js", "Spring Boot", "Java 17", "JWT", "MySQL", "REST APIs"],
+    image: null,
+    link: "https://github.com/Jayaram13690/Employee_Management_System",
+    highlights: [
+      "Implemented JWT-based authentication with secure refresh token mechanism (7-day tokens).",
+      "Built role-based access control system for Employees, Managers, and Admins with granular permissions.",
+      "Developed comprehensive leave management with approval workflows and balance auto-initialization.",
+      "Created REST API with Swagger/OpenAPI documentation, pagination, filtering, and input validation.",
+      "Integrated async email notifications with HTML templates for approvals and rejections.",
+      "Optimized database performance with composite indexes on frequently queried fields.",
+      "Implemented password hashing and strong validation with custom validator annotations.",
+    ],
+  },
+  {
     title: "MoviesApp",
     date: "Dec 2024",
     description:
