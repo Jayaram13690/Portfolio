@@ -1,0 +1,75 @@
+.avatar-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 450px;
+  flex-shrink: 0;
+}
+.avatar-bg-glow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(108, 99, 255, 0.12) 0%,
+    rgba(91, 109, 239, 0.06) 40%,
+    transparent 70%
+  );
+  filter: blur(24px);
+  animation: avatar-pulse 4s ease-in-out infinite;
+}
+@keyframes avatar-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+}
+
+/* Image container */
+.avatar-image-container {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  z-index: 1;
+}
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* SVG eyes overlay — positioned over the empty eye sockets */
+.avatar-eyes-svg {
+  position: absolute;
+  top: 29.5%;
+  left: 22%;
+  width: 54%;
+  height: 13%;
+  z-index: 3;
+  pointer-events: none;
+}
+.avatar-pupil {
+  transition:
+    cx 0.08s ease-out,
+    cy 0.08s ease-out;
+}
+
+@media (max-width: 900px) {
+  .avatar-wrapper {
+    width: 260px;
+    height: 260px;
+    margin: 0 auto 32px;
+  }
+  .avatar-image-container {
+    width: 240px;
+    height: 240px;
+  }
+}
